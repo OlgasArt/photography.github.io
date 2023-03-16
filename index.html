@@ -24,6 +24,22 @@
         font-size: 2rem;
         margin-bottom: 40px;
       }
+      /* Style for the gallery table */
+      table.gallery {
+        margin: 0 auto;
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+      table.gallery td {
+        padding: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+      }
+      table.gallery td img {
+        display: block;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+      }
     </style>
   </head>
   <body>
@@ -32,14 +48,18 @@
       <h2>A Collection of AI-Generated Images</h2>
     </header>
     <main>
-      <div class="gallery">
-        <img src="https://github.com/OlgasArt/photography.github.io/blob/main/images/image1.jfif?raw=true" alt="Photograph 1">
-        <img src="https://github.com/OlgasArt/photography.github.io/blob/main/images/image2.jpg?raw=true" alt="Photograph 2">
-        <img src="https://github.com/OlgasArt/photography.github.io/blob/main/images/image3.png?raw=true" alt="Photograph 3">
-        <img src="https://github.com/OlgasArt/photography.github.io/blob/main/images/image4.png?raw=true" alt="Photograph 4">
-        <img src="https://github.com/OlgasArt/photography.github.io/blob/main/images/image5.jpg?raw=true" alt="Photograph 5">
-        <img src="https://github.com/OlgasArt/photography.github.io/blob/main/images/image6.png?raw=true" alt="Photograph 6">
-      </div>
+      <table class="gallery">
+        <tr>
+          <td><img src="https://github.com/OlgasArt/photography.github.io/blob/main/images/image1.jpg?raw=true" alt="Photograph 1"></td>
+          <td><img src="https://github.com/OlgasArt/photography.github.io/blob/main/images/image2.jpg?raw=true" alt="Photograph 2"></td>
+          <td><img src="https://github.com/OlgasArt/photography.github.io/blob/main/images/image3.jpg?raw=true" alt="Photograph 3"></td>
+        </tr>
+        <tr>
+          <td><img src="https://github.com/OlgasArt/photography.github.io/blob/main/images/image4.jpg?raw=true" alt="Photograph 4"></td>
+          <td><img src="https://github.com/OlgasArt/photography.github.io/blob/main/images/image5.jpg?raw=true" alt="Photograph 5"></td>
+          <td><img src="https://github.com/OlgasArt/photography.github.io/blob/main/images/image6.jpg?raw=true" alt="Photograph 6"></td>
+        </tr>
+      </table>
     </main>
     <a href="https://github.com/OlgasArt/" class="back-home-link">Back to homepage</a>
     <script src="script.js"></script>
